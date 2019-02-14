@@ -15,17 +15,18 @@
 
 
 
-<meta name="description" content="如果不能讲一个点讲透, 那说明我对这个点还没有了解透彻">
-<meta name="keywords" content="博客, 记录, hadoop, kafka, java">
-<meta property="og:type" content="website">
-<meta property="og:title" content="大大大勇的博客">
-<meta property="og:url" content="https://bekylin.github.io/archives/2019/01/index.html">
+<meta name="description" content="问题 再次寻求解决    问题  用户在执行hive的load语句将数据导入hive中时, 会出现这个异常. sqoop语句部分存在这个问题. hive语句部分存在这个问题.   hadoop null does not belong to hadoop  这个问题困扰我很久了, 上网查, 看到CSDN上有几篇文章说是因为在主机中没有添加执行这个操作的用户. 后面我在机器中添加了相应的用户, 并">
+<meta name="keywords" content="hadoop sqoop hive load">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hadoop null does not belong to hadoop">
+<meta property="og:url" content="https://bekylin.github.io/2019/01/25/user-null-does-not-belong-to-hadoop/index.html">
 <meta property="og:site_name" content="大大大勇的博客">
-<meta property="og:description" content="如果不能讲一个点讲透, 那说明我对这个点还没有了解透彻">
+<meta property="og:description" content="问题 再次寻求解决    问题  用户在执行hive的load语句将数据导入hive中时, 会出现这个异常. sqoop语句部分存在这个问题. hive语句部分存在这个问题.   hadoop null does not belong to hadoop  这个问题困扰我很久了, 上网查, 看到CSDN上有几篇文章说是因为在主机中没有添加执行这个操作的用户. 后面我在机器中添加了相应的用户, 并">
 <meta property="og:locale" content="CN">
+<meta property="og:updated_time" content="2019-01-25T08:41:27.649Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="大大大勇的博客">
-<meta name="twitter:description" content="如果不能讲一个点讲透, 那说明我对这个点还没有了解透彻">
+<meta name="twitter:title" content="hadoop null does not belong to hadoop">
+<meta name="twitter:description" content="问题 再次寻求解决    问题  用户在执行hive的load语句将数据导入hive中时, 会出现这个异常. sqoop语句部分存在这个问题. hive语句部分存在这个问题.   hadoop null does not belong to hadoop  这个问题困扰我很久了, 上网查, 看到CSDN上有几篇文章说是因为在主机中没有添加执行这个操作的用户. 后面我在机器中添加了相应的用户, 并">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -57,7 +58,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives: 2019/1 | 大大大勇的博客</title>
+<title>hadoop null does not belong to hadoop | 大大大勇的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -67,8 +68,8 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
-        isArchive: true,
+        isPost: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -261,114 +262,185 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-user-null-does-not-belong-to-hadoop" class="article article-type-post" itemscope="" itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2019/01/25/user-null-does-not-belong-to-hadoop/" class="archive-article-date">
-      <time datetime="2019-01-25T08:23:29.000Z" itemprop="datePublished">01-25</time>
+    <div class="article-meta">
+      <a href="/2019/01/25/user-null-does-not-belong-to-hadoop/" class="article-date">
+      <time datetime="2019-01-25T08:23:29.000Z" itemprop="datePublished">2019-01-25</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/01/25/user-null-does-not-belong-to-hadoop/">hadoop null does not belong to hadoop</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      hadoop null does not belong to hadoop
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 
-          
+        
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hadoop-sqoop-hive-load/">hadoop sqoop hive load</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><ul class="markdownIt-TOC">
+<li><a href="#%E9%97%AE%E9%A2%98">问题</a></li>
+<li><a href="#%E5%86%8D%E6%AC%A1%E5%AF%BB%E6%B1%82%E8%A7%A3%E5%86%B3">再次寻求解决</a></li>
+</ul>
+</p>
+<h2 id="问题"><a class="markdownIt-Anchor" href="#问题"></a> 问题</h2>
+<ol>
+<li>用户在执行hive的load语句将数据导入hive中时, 会出现这个异常.</li>
+<li>sqoop语句部分存在这个问题.</li>
+<li>hive语句部分存在这个问题.</li>
+</ol>
+<blockquote>
+<p>hadoop null does not belong to hadoop</p>
+</blockquote>
+<p>这个问题困扰我很久了, 上网查, 看到CSDN上有几篇文章说是因为在主机中没有添加执行这个操作的用户. 后面我在机器中添加了相应的用户, 并且加入到Hadoop和HDFS组中. 问题并没有解决.<br>
+另外, 管理员执行同样的语句是可以正常执行, 而不会出现这个异常的.</p>
+<h2 id="再次寻求解决"><a class="markdownIt-Anchor" href="#再次寻求解决"></a> 再次寻求解决</h2>
+<p>后来查到问题是源于hive的一个bug. 链接里提供了相对应的解决办法.</p>
+<ul>
+<li><a href="https://thebigan.wordpress.com/2018/04/17/erroraccesscontrolexception-user-does-not-belong-to-hdfs-when-running-hive-load-data-inpath/" target="_blank" rel="noopener">user-does-not-belong-to-hdfs</a></li>
+<li><a href="https://issues.apache.org/jira/browse/HIVE-13716" target="_blank" rel="noopener">HIVE-13716</a></li>
+</ul>
+
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2019/01/25/user-null-does-not-belong-to-hadoop/">hadoop null does not belong to hadoop</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">海边的贝壳林</a></p>
+        <p><span>发布时间:</span>2019-01-25, 16:23:29</p>
+        <p><span>最后更新:</span>2019-01-25, 16:41:27</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2019/01/25/user-null-does-not-belong-to-hadoop/" title="hadoop null does not belong to hadoop">https://bekylin.github.io/2019/01/25/user-null-does-not-belong-to-hadoop/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://bekylin.github.io/2019/01/25/user-null-does-not-belong-to-hadoop/　　作者: 海边的贝壳林" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2019/01/17/install-hexo/">
+                    install hexo
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2019/01/17/install-hexo/" class="archive-article-date">
-      <time datetime="2019-01-17T11:04:11.000Z" itemprop="datePublished">01-17</time>
-</a>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#问题"><span class="toc-number">1.</span> <span class="toc-text"> 问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#再次寻求解决"><span class="toc-number">2.</span> <span class="toc-text"> 再次寻求解决</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
 
 
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
         </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/01/17/install-hexo/">install hexo</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"hadoop null does not belong to hadoop　| 大大大勇的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
     
+
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2019/01/17/hello-world/" class="archive-article-date">
-      <time datetime="2019-01-17T10:27:19.290Z" itemprop="datePublished">01-17</time>
-</a>
+</div>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/01/17/hello-world/">Hello World</a>
-    </h1>
-  
 
-        <div class="article-info info-on-archive">
-          
 
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+
+
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2019/01/17/install-hexo/" title="下一篇: install hexo">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/01/25/user-null-does-not-belong-to-hadoop/">hadoop null does not belong to hadoop</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/17/install-hexo/">install hexo</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/17/hello-world/">Hello World</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
